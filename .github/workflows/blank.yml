@@ -1,6 +1,10 @@
 name: CI
 
-#on: [push] disabled
+# disabled build on push by using branch: `disabled`
+on:
+  push:
+    branches:
+        - disabled
 
 jobs:
   build:
